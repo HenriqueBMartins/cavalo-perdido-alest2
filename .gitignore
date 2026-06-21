@@ -1,0 +1,11 @@
+# Compiled output
+out/
+*.class
+
+# macOS
+.DS_Store
+
+# IDE
+.idea/
+*.iml
+.vscode/
