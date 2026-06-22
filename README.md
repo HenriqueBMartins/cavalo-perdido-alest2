@@ -3,22 +3,13 @@
 ## Como compilar e executar
 
 ```bash
-# 1. Compile
-javac src/CavaloPerdido.java -d out
-
-# 2. Execute com os casos de teste
-java -cp out CavaloPerdido testes/caso1.txt testes/caso2.txt ...
-
-# 3. Ou rode sem argumentos para ver o exemplo embutido
-java -cp out CavaloPerdido
+javac src/Main.java -d out
+java -cp out Main testes/caso1.txt testes/caso2.txt ...
 ```
 
 ## Formato dos arquivos de teste
 
-Cada arquivo `.txt` deve ter o seguinte formato:
-
 ```
-LINHAS COLUNAS       ← (opcional, pode omitir)
 ..C..
 .....
 ..x..
@@ -26,26 +17,13 @@ LINHAS COLUNAS       ← (opcional, pode omitir)
 ..S..
 ```
 
-Caracteres:
 - `.` → casa livre
-- `x` → casa bloqueada (não pode pisar)
+- `x` → casa bloqueada
 - `C` → posição inicial do cavalo
 - `S` → saída
 
-## Descrição do Algoritmo
+## Documentação
 
-**BFS (Busca em Largura)** em um grafo implícito:
-- **Nós** = células do tabuleiro (linha, coluna)
-- **Arestas** = 8 movimentos do cavalo
-- **Toroidal**: `nova = ((pos + delta) % tamanho + tamanho) % tamanho`
-
-O BFS garante o **menor caminho** porque explora os nós por nível (distância).
-
-## Complexidade
-
-- **Tempo**: O(L × C) onde L = linhas, C = colunas
-- **Espaço**: O(L × C) para a matriz de visitados e a fila
-
-## Exemplo do enunciado
-
-O enunciado afirma que o cavalo chega à saída em **10 movimentos**.
+- [COMO_FUNCIONA.md](COMO_FUNCIONA.md) — explicação do algoritmo e do código
+- [RESULTADOS_E_RELATORIO.md](RESULTADOS_E_RELATORIO.md) — resultados dos casos de teste e roteiro para o relatório
+- [ROTEIRO_APRESENTACAO.md](ROTEIRO_APRESENTACAO.md) — roteiro da apresentação
