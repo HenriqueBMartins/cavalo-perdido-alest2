@@ -4,7 +4,7 @@
 
 | Caso | Dimensão | Posição C | Posição S | Mínimo de Movimentos |
 |------|----------|-----------|-----------|----------------------|
-| 0    | 20×41    | (4, 10)   | (14, 34)  | **9**                |
+| 0    | 20×41    | (4, 10)   | (14, 34)  | **IMPOSSÍVEL**       |
 | 1    | 10×10    | (7, 7)    | (6, 8)    | **2**                |
 | 2    | 20×20    | (14, 5)   | (2, 1)    | **6**                |
 | 3    | 30×30    | (21, 5)   | (28, 25)  | **7**                |
@@ -18,7 +18,7 @@
 | 11   | 200×200  | (45, 108) | (168, 39) | **50**               |
 | 12   | 400×400  | (8, 17)   | (245, 87) | **85**               |
 
-> Nenhum caso foi impossível — todos os cavalos conseguiram chegar à saída.
+> O **caso0** é o único caso **IMPOSSÍVEL**, comprovando que o cavalo está cercado por barreiras e não há caminho viável até a saída.
 
 ---
 
